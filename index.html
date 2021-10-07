@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Setting the viewport meta tag lets you control the width 
+         and scaling of the viewport so that it's sized correctly 
+         on all devices. -->
+
+    <!-- https://web.dev/viewport/  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/play_page.css"/>
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+
+    <!-- Reference for this information:  https://bit.ly/3i0Sy4C  -->
+
+    <!-- "integrity" attribute is to allow the browser to check the file source to ensure that the code is never loaded if the source has been manipulated. -->
+    <!-- Crossorigin attribute is present when a request is loaded using 'CORS' which is now a requirement of SRI checking when not loaded from the 'same-origin'. -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" 
+          integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" 
+          crossorigin="anonymous">
+    <title>Modules</title>
+
+    <script type="module">
+        // import { makeSound } from "./js/play_page.js";
+
+    </script>
+  </head>
+
+  <body>
+      <header>
+        <h2>KnowItAll</h1>
+      </header>
+      <!-- read about the main element:  https://bit.ly/2Z3b6JW   -->
+      
+      <div class="category">SELECT CATEGORY</div>
+      <select class="selectCate">
+        <option value="category1">category1</option>
+        <option value="category2">category2</option>
+        <option value="category3">category3</option>
+      </select>
+
+      <button class="selectButton">SELECT</button>
+      <footer>
+        <button class="endgame">END GAME</button>
+      </footer>
+  </body>
+</html>
